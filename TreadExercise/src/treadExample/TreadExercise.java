@@ -1,4 +1,4 @@
-package treadExample;
+package TreadExample;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -76,6 +76,7 @@ public class TreadExercise extends JFrame implements ActionListener {
 			while (increaseRunning == true) {
 				count++;
 				label.setText("Count: " + count);
+				System.out.println(getName() + "Increase");
 				try {
 					Thread.sleep(1000); // Sleep for 1 second
 				} catch (InterruptedException e) {
@@ -91,6 +92,7 @@ public class TreadExercise extends JFrame implements ActionListener {
 			while (decreaseRunning == true) {
 				count--;
 				label.setText("Count: " + count);
+				System.out.println(getName() + "DEcrease");
 				try {
 					Thread.sleep(1000); // Sleep for 1 second
 				} catch (InterruptedException e) {
